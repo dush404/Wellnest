@@ -5,7 +5,7 @@
 
 // 1. PASTE YOUR FASTAPI BACKEND URL HERE
 
-const API_URL = "https://wellnest-e4wy.onrender.com/predict";
+const API_URL = "https://wellnest-backend-6ra1.onrender.com/";
 
 // Example:
 // const API_URL = "https://your-backend.onrender.com/predict";
