@@ -1,0 +1,512 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f5f5ef">
+    <title>Wellnest — Student Wellbeing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+<div class="app-shell">
+
+    <!-- HEADER -->
+    <header class="navbar">
+        <a href="#" class="brand">
+            <div class="brand-icon">
+                <i data-lucide="brain"></i>
+            </div>
+            <div>
+                <h2>wellnest<span>.</span></h2>
+                <small>STUDENT WELLNESS</small>
+            </div>
+        </a>
+
+        <div class="nav-right">
+            <span class="status-dot"></span>
+            <span>Assessment portal</span>
+        </div>
+    </header>
+
+    <!-- INTRO -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="eyebrow">
+                <i data-lucide="sparkles"></i>
+                YOUR PERSONAL WELLNESS SPACE
+            </div>
+
+            <h1>
+                Understand your<br>
+                <span>digital wellbeing.</span>
+            </h1>
+
+            <p>
+                Your daily habits tell a story. Explore how your digital
+                lifestyle, academic routine and physical activities relate
+                to your predicted mental health score.
+            </p>
+
+            <div class="hero-tags">
+                <span><i data-lucide="shield-check"></i> Private assessment</span>
+                <span><i data-lucide="clock-3"></i> Takes 2 minutes</span>
+            </div>
+        </div>
+
+        <div class="hero-art">
+            <div class="art-circle circle-one"></div>
+            <div class="art-circle circle-two"></div>
+            <div class="art-center">
+                <i data-lucide="brain"></i>
+            </div>
+            <div class="floating-card card-one">
+                <i data-lucide="moon"></i>
+                <span>Sleep</span>
+            </div>
+            <div class="floating-card card-two">
+                <i data-lucide="activity"></i>
+                <span>Balance</span>
+            </div>
+            <div class="floating-card card-three">
+                <i data-lucide="smartphone"></i>
+                <span>Digital life</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-layout">
+
+        <!-- FORM -->
+        <section class="form-panel">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">YOUR PROFILE</span>
+                    <h2>Let's get to know you.</h2>
+                    <p>Fill in your details to begin the assessment.</p>
+                </div>
+                <div class="step-number">01</div>
+            </div>
+
+            <form id="assessmentForm">
+
+                <!-- PERSONAL DETAILS -->
+                <div class="form-section">
+                    <div class="form-section-title">
+                        <div class="section-icon sage">
+                            <i data-lucide="user-round"></i>
+                        </div>
+                        <div>
+                            <h3>Personal information</h3>
+                            <p>A little about yourself</p>
+                        </div>
+                    </div>
+
+                    <div class="input-grid">
+
+                        <div class="field">
+                            <label for="age">Age</label>
+                            <div class="input-wrap">
+                                <i data-lucide="calendar-days"></i>
+                                <input id="age" type="number"
+                                    min="10" max="100"
+                                    value="21" required>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="gender">Gender</label>
+                            <div class="select-wrap">
+                                <select id="gender" required>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                                <i data-lucide="chevron-down"></i>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="country">Country</label>
+                            <div class="select-wrap">
+                                <select id="country" required>
+                                    <option value="India">India</option>
+                                    <option value="USA">USA</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="Australia">Australia</option>
+                                    <option value="UK">UK</option>
+                                    <option value="Germany">Germany</option>
+                                    <option value="Mexico">Mexico</option>
+                                    <option value="Turkey">Turkey</option>
+                                    <option value="France">France</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <i data-lucide="chevron-down"></i>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="academic_level">Academic level</label>
+                            <div class="select-wrap">
+                                <select id="academic_level" required>
+                                    <option value="Undergraduate">Undergraduate</option>
+                                    <option value="Graduate">Graduate</option>
+                                    <option value="High School">High School</option>
+                                </select>
+                                <i data-lucide="chevron-down"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="form-divider"></div>
+
+                <!-- DIGITAL HABITS -->
+                <div class="form-section">
+
+                    <div class="form-section-title">
+                        <div class="section-icon lavender">
+                            <i data-lucide="smartphone"></i>
+                        </div>
+                        <div>
+                            <h3>Digital lifestyle</h3>
+                            <p>Your social media habits</p>
+                        </div>
+                    </div>
+
+                    <div class="input-grid">
+
+                        <div class="field">
+                            <label for="most_used_platform">Most used platform</label>
+                            <div class="select-wrap">
+                                <select id="most_used_platform" required>
+                                    <option>Instagram</option>
+                                    <option>YouTube</option>
+                                    <option>Facebook</option>
+                                    <option>LinkedIn</option>
+                                    <option>Snapchat</option>
+                                    <option>Twitter</option>
+                                    <option>TikTok</option>
+                                    <option>LINE</option>
+                                    <option>KakaoTalk</option>
+                                    <option>VKontakte</option>
+                                    <option>WhatsApp</option>
+                                    <option>WeChat</option>
+                                </select>
+                                <i data-lucide="chevron-down"></i>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="purpose_of_use">Primary purpose</label>
+                            <div class="select-wrap">
+                                <select id="purpose_of_use" required>
+                                    <option>Education</option>
+                                    <option>Entertainment</option>
+                                    <option>Networking</option>
+                                    <option>News</option>
+                                </select>
+                                <i data-lucide="chevron-down"></i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- SLIDER -->
+                    <div class="slider-field">
+                        <div class="slider-heading">
+                            <label for="avg_daily_usage_hours">
+                                Average daily screen usage
+                            </label>
+                            <div class="slider-value">
+                                <span id="avg_daily_usage_hours_value">5</span>
+                                <small>hours</small>
+                            </div>
+                        </div>
+
+                        <input type="range" id="avg_daily_usage_hours"
+                            min="0" max="24" step="0.5" value="5"
+                            class="custom-range">
+
+                        <div class="range-labels">
+                            <span>0 hours</span>
+                            <span>24 hours</span>
+                        </div>
+                    </div>
+
+                    <div class="slider-field">
+                        <div class="slider-heading">
+                            <label for="daily_unlocks">
+                                Daily phone unlocks
+                            </label>
+                            <div class="slider-value">
+                                <span id="daily_unlocks_value">50</span>
+                                <small>times</small>
+                            </div>
+                        </div>
+
+                        <input type="range" id="daily_unlocks"
+                            min="0" max="300" step="5" value="50"
+                            class="custom-range">
+
+                        <div class="range-labels">
+                            <span>0 times</span>
+                            <span>300 times</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-divider"></div>
+
+                <!-- LIFESTYLE -->
+                <div class="form-section">
+
+                    <div class="form-section-title">
+                        <div class="section-icon peach">
+                            <i data-lucide="heart-pulse"></i>
+                        </div>
+                        <div>
+                            <h3>Daily lifestyle</h3>
+                            <p>How you spend your day</p>
+                        </div>
+                    </div>
+
+                    <div class="slider-field">
+                        <div class="slider-heading">
+                            <label for="study_hours">Daily study hours</label>
+                            <div class="slider-value">
+                                <span id="study_hours_value">6</span>
+                                <small>hours</small>
+                            </div>
+                        </div>
+                        <input type="range" id="study_hours"
+                            min="0" max="24" step="0.5" value="6"
+                            class="custom-range">
+                        <div class="range-labels">
+                            <span>0 hours</span>
+                            <span>24 hours</span>
+                        </div>
+                    </div>
+
+                    <div class="slider-field">
+                        <div class="slider-heading">
+                            <label for="physical_activity_hours">
+                                Physical activity
+                            </label>
+                            <div class="slider-value">
+                                <span id="physical_activity_hours_value">1</span>
+                                <small>hours</small>
+                            </div>
+                        </div>
+                        <input type="range" id="physical_activity_hours"
+                            min="0" max="24" step="0.5" value="1"
+                            class="custom-range">
+                        <div class="range-labels">
+                            <span>0 hours</span>
+                            <span>24 hours</span>
+                        </div>
+                    </div>
+
+                    <div class="slider-field">
+                        <div class="slider-heading">
+                            <label for="sleep_hours_per_night">
+                                Sleep per night
+                            </label>
+                            <div class="slider-value">
+                                <span id="sleep_hours_per_night_value">7</span>
+                                <small>hours</small>
+                            </div>
+                        </div>
+                        <input type="range" id="sleep_hours_per_night"
+                            min="0" max="24" step="0.5" value="7"
+                            class="custom-range">
+                        <div class="range-labels">
+                            <span>0 hours</span>
+                            <span>24 hours</span>
+                        </div>
+                    </div>
+
+                    <div class="field stress-field">
+                        <label for="stress_level">How would you describe your stress level?</label>
+                        <div class="select-wrap">
+                            <select id="stress_level" required>
+                                <option value="Low">Low</option>
+                                <option value="Medium" selected>Medium</option>
+                                <option value="High">High</option>
+                                <option value="Very High">Very High</option>
+                            </select>
+                            <i data-lucide="chevron-down"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- DISCLAIMER -->
+                <div class="privacy-note">
+                    <i data-lucide="lock-keyhole"></i>
+                    <p>
+                        Your responses are used to generate a model-based
+                        prediction. This assessment is not a clinical
+                        diagnosis or a substitute for professional support.
+                    </p>
+                </div>
+
+                <button type="submit" class="submit-button" id="submitButton">
+                    <span>Generate my assessment</span>
+                    <i data-lucide="arrow-up-right"></i>
+                </button>
+
+            </form>
+        </section>
+
+        <!-- RESULT PANEL -->
+        <aside class="result-panel" id="resultPanel">
+
+            <div class="result-top">
+                <div>
+                    <span class="section-label">YOUR INSIGHT</span>
+                    <h2>Wellbeing score</h2>
+                </div>
+                <div class="result-icon">
+                    <i data-lucide="activity"></i>
+                </div>
+            </div>
+
+            <div class="score-container" id="scoreContainer">
+
+                <div class="score-gauge">
+
+                    <svg viewBox="0 0 360 205"
+                        class="gauge-svg"
+                        xmlns="http://www.w3.org/2000/svg">
+
+                        <defs>
+                            <clipPath id="domeClip">
+                                <path d="M 30 180 A 150 150 0 0 1 330 180 L 30 180 Z"/>
+                            </clipPath>
+                        </defs>
+
+                        <!-- Background semicircle -->
+                        <path
+                            d="M 30 180 A 150 150 0 0 1 330 180"
+                            class="gauge-track"
+                        />
+
+                        <!-- Progress semicircle -->
+                        <path
+                            d="M 30 180 A 150 150 0 0 1 330 180"
+                            class="gauge-progress"
+                            id="gaugeProgress"
+                        />
+
+                        <!-- Wavy fill -->
+                        <g clip-path="url(#domeClip)">
+                            <path
+                                id="wavePath"
+                                class="wave-fill"
+                                d="M 0 180 L 0 180 L 360 180 L 360 205 L 0 205 Z"
+                            />
+                        </g>
+
+                        <text x="180" y="135"
+                            text-anchor="middle"
+                            class="gauge-number"
+                            id="scoreNumber">--</text>
+
+                        <text x="180" y="158"
+                            text-anchor="middle"
+                            class="gauge-subtitle">OUT OF 10</text>
+
+                    </svg>
+
+                </div>
+
+                <div class="score-description">
+                    <span class="score-status" id="scoreStatus">
+                        Awaiting assessment
+                    </span>
+                    <p id="scoreDescription">
+                        Complete the assessment to see your predicted score.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="result-divider"></div>
+
+            <div class="result-insights">
+                <h3>Assessment summary</h3>
+
+                <div class="insight-item">
+                    <div class="insight-icon sage">
+                        <i data-lucide="brain"></i>
+                    </div>
+                    <div>
+                        <strong>Model prediction</strong>
+                        <p>Generated using your trained ML model.</p>
+                    </div>
+                </div>
+
+                <div class="insight-item">
+                    <div class="insight-icon lavender">
+                        <i data-lucide="chart-no-axes-combined"></i>
+                    </div>
+                    <div>
+                        <strong>Personal insights</strong>
+                        <p>Understand the score alongside your habits.</p>
+                    </div>
+                </div>
+
+                <div class="insight-item">
+                    <div class="insight-icon peach">
+                        <i data-lucide="heart-handshake"></i>
+                    </div>
+                    <div>
+                        <strong>Take care of yourself</strong>
+                        <p>A prediction cannot define your wellbeing.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="result-footer">
+                <i data-lucide="info"></i>
+                <span>This score is a model output, not a medical diagnosis.</span>
+            </div>
+
+            <button class="reset-button" id="resetButton" type="button">
+                <i data-lucide="refresh-ccw"></i>
+                Reset assessment
+            </button>
+
+        </aside>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-brand">wellnest<span>.</span></div>
+        <p>Built for better digital awareness.</p>
+        <span>© 2026 dush</span>
+    </footer>
+
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast">
+    <i data-lucide="alert-circle"></i>
+    <span id="toastMessage">Something went wrong.</span>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
