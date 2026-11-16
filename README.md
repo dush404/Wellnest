@@ -3,6 +3,7 @@
 Wellnest is a student mental-health score prediction project. It uses social-media habits, demographics, study and lifestyle information, and reported stress to estimate a continuous `Mental_Health_Score`. The project includes the model-training notebook, a FastAPI prediction service, and a browser-based interface.
 
 > This is an educational prediction demo, not a medical assessment or substitute for professional care.
+> Live link - [Wellnest](https://wellnest-1-xgy5.onrender.com/)
 
 ## How the model was created
 
